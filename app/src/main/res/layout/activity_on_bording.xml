@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="monospace"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_16sdp"
+            android:id="@+id/onboading_left_txt"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:text="Next" />
+
+        <limocity.cbistech.com.limocity.onboarding.DotsIndicator
+            android:id="@+id/dots_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewpager"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:dotsColor="@color/colorPrimary"
+            app:dotsSize="@dimen/_8sdp"
+            app:dotsWidthFactor="3" />
+
+        <TextView
+            android:id="@+id/onboading_right_txt"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_16sdp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:text="Skip" />
+    </LinearLayout>
+
+</LinearLayout>

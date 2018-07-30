@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_home" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:visibility="visible"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal">
+
+
+                <limocity.cbistech.com.limocity.otftextviews.OtfBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="YOUR RIDE DETAILS"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18sdp" />
+
+            </LinearLayout>
+
+            <limocity.cbistech.com.limocity.otftextviews.OtfBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="Car Type          :       BMW"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <limocity.cbistech.com.limocity.otftextviews.OtfBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="Pickup              :       25/04/2018"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+
+            <limocity.cbistech.com.limocity.otftextviews.OtfBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="Drop                 :       25/04/2018"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+
+            <limocity.cbistech.com.limocity.otftextviews.OtfBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="----------------------------------------------------------------"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <limocity.cbistech.com.limocity.otftextviews.OtfBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="Cost                 :        35 KD"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <limocity.cbistech.com.limocity.otftextviews.OtfBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="Discount          :         5 KD"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+
+            <limocity.cbistech.com.limocity.otftextviews.OtfBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:text="Total                :         30 KD"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <limocity.cbistech.com.limocity.otftextviews.OtfBoldTextView
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="Pick Your Car"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp" />
+</LinearLayout>
